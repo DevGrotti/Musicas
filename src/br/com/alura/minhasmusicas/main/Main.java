@@ -1,5 +1,6 @@
 package br.com.alura.minhasmusicas.main;
 
+import br.com.alura.minhasmusicas.modelos.MinhasPreferidas;
 import br.com.alura.minhasmusicas.modelos.Musica;
 import br.com.alura.minhasmusicas.modelos.Podcast;
 
@@ -30,6 +31,10 @@ public class Main {
             meuPodcast.curte();
 
         }
+
+        MinhasPreferidas preferidas = new MinhasPreferidas();
+        preferidas.inclui(meuPodcast);
+        preferidas.inclui(minhaMusica);
 
     }
 }
